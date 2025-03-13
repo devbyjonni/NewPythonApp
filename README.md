@@ -55,13 +55,6 @@ Download recommended .gitignore for Python:
 curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore 
 ``` 
 
-Initialize Git:
-```bash
-git init
-git add .
-git commit -m "Initial commit with Python .gitignore"
-```
-
 Verify configuration:
 ```bash
 ls -a
@@ -69,10 +62,13 @@ python3 --version
 python3 main.py
 ```
 
----
+Open the project:
+```bash
+code .
+```
 
-### Configure VS Code for Python Development
-If VS Code does not detect the correct Python interpreter, select it manually:
+Configure VS Code for Python Development:
+If VS Code does not detect the correct Python interpreter, select it manually.
 - Open the Command Palette (`Cmd + Shift + P`).
 - Search for **Python: Select Interpreter**.
 - Choose the virtual environment inside your project: `.venv/bin/python3`.
@@ -81,6 +77,13 @@ Verify configuration:
 ```bash
 python3 --version
 python3 main.py
+```
+
+Initialize Git:
+```bash
+git init
+git add .
+git commit -m "Initial commit with Python .gitignore"
 ```
 
 ---
