@@ -25,25 +25,39 @@ Install the following extensions from the VS Code Marketplace:
 
 - **[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)**
 
+The Python extension will automatically install the following extensions by default to provide the best Python development experience in VS Code:
+
+- **Pylance** - to provide performant Python language support
+- **Python Debugger** - to provide a seamless debug experience with debugpy.
 
 ---
 
 ## 🚀 Quick Setup Script
 Run this script to create a new Python project:
 ```bash
-cd ~/Developer            
-mkdir MyPythonProject     
-cd MyPythonProject      
-python3 -m venv .venv    
-source .venv/bin/activate
-touch .gitignore
-touch main.py
+cd ~/Developer              
+mkdir MyPythonProject       
+cd MyPythonProject          
+python3 -m venv .venv       
+source .venv/bin/activate   
+touch main.py               
+echo 'print("New Python App Running")' > main.py  
+```
+Download recommended .gitignore for Python:
+```bash
+curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore 
+``` 
+
+Initialize Git:
+```bash
+git init
+git add .
+git commit -m "Initial commit with Python .gitignore"
 ```
 
-Verify:
-
+Verify configuration:
 ```bash
-ls -l
+ls -a
 python3 --version
 python3 main.py
 ```
@@ -57,7 +71,6 @@ If VS Code does not detect the correct Python interpreter, select it manually:
 - Choose the virtual environment inside your project: `.venv/bin/python3`.
 
 Verify configuration:
-
 ```bash
 python3 --version
 python3 main.py
@@ -65,23 +78,5 @@ python3 main.py
 
 ---
 
-## Initialize Git Repository
-If you plan to use Git for version control, initialize a repository:
-```bash
-git init
-```
-Create a `.gitignore` file to exclude unnecessary files:
-```bash
-echo '.venv/
-__pycache__/
-*.pyc' > .gitignore
-```
-Commit the initial setup:
-```bash
-git add .
-git commit -m "Initial commit"
-```
-
----
 
 ✅ **All Set!**
