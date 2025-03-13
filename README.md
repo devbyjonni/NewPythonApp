@@ -44,6 +44,7 @@ touch main.py
 echo 'print("New Python App Running")' > main.py  
 ```
 Download recommended .gitignore for Python:
+(It’s hosted in GitHub’s official gitignore repository: GitHub/gitignore.)
 ```bash
 curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore 
 ``` 
