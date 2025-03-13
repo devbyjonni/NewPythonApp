@@ -33,15 +33,15 @@ The Python extension will automatically install the following extensions by defa
 ---
 
 ## 🚀 Quick Setup Script
-Run this script to create a new Python project:
+Run this script to create a new Python app:
 ```bash
 cd ~/Developer              
-mkdir MyPythonProject       
-cd MyPythonProject          
+mkdir MyNewPythonApp       
+cd MyNewPythonApp          
 python3 -m venv .venv       
 source .venv/bin/activate   
 touch main.py               
-echo 'print("New Python App Running")' > main.py  
+echo 'print("My New Python App Running!")' > main.py  
 ```
 Download recommended .gitignore for Python:
 (It’s hosted in GitHub’s official gitignore repository: GitHub/gitignore.)
