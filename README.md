@@ -27,7 +27,7 @@ Install the following extensions from the VS Code Marketplace:
 
 The Python extension will automatically install the following extensions by default to provide the best Python development experience in VS Code:
 
-- **Pylance** - to provide performant Python language support
+- **Pylance** - to provide performant Python language support.
 - **Python Debugger** - to provide a seamless debug experience with debugpy.
 
 ---
