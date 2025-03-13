@@ -41,7 +41,13 @@ cd MyNewPythonApp
 python3 -m venv .venv       
 source .venv/bin/activate   
 touch main.py               
-echo 'print("My New Python App Running!")' > main.py  
+echo 'import sys
+
+def main():
+    print("My New Python App Running!")
+
+if __name__ == "__main__":
+    main()' > main.py 
 ```
 Download recommended .gitignore for Python:
 (It’s hosted in GitHub’s official gitignore repository: GitHub/gitignore.)
