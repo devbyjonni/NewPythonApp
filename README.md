@@ -84,6 +84,8 @@ Initialize Git:
 git init
 git add .
 git commit -m "Initial commit with Python .gitignore"
+git log
+git status
 ```
 
 ---
